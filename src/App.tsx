@@ -8,11 +8,34 @@ const App = () => {
     <BrowserRouter>
       <main className="container mx-auto p-4">
         <ToastContainer />
-        <Navbar />
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/spells/:index" element={<SpellDetailPage />} />
-          <Route path="/favorites" element={<FavoritesPage />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <Navbar />
+                <HomePage />
+              </>
+            }
+          />
+          <Route
+            path="/spells/:index"
+            element={
+              <>
+                <Navbar />
+                <SpellDetailPage />
+              </>
+            }
+          />
+          <Route
+            path="/favorites"
+            element={
+              <>
+                <Navbar />
+                <FavoritesPage />
+              </>
+            }
+          />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </main>

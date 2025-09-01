@@ -1,6 +1,6 @@
 import { useEffect, useState, useMemo } from "react";
 import { useSpellStore } from "../store/useSpellStore";
-import SpellCard from "../components/ui/SpellCard";
+import SpellCard from "../components/shared/SpellCard";
 import type { SpellListItem } from "../types/spell";
 import "react-toastify/dist/ReactToastify.css";
 
